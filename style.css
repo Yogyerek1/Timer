@@ -11,6 +11,8 @@ body {
 #container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 #timer_container {
@@ -56,4 +58,9 @@ a {
     border: 1px dotted blue;
     border-radius: 13px;
     padding: 10px;
+}
+
+#date {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
 }

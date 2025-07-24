@@ -11,6 +11,7 @@
 </head>
 <body style="background-color: #1e1e1e;">
     <div id="container">
+        <div id="date"></div>
         <div class="container mt-4 pb-5">
             <div class="card text-center mx-auto border border-primary" style="max-width: 400px;">
                 <div class="card-header bg-dark text-white border-bottom border-primary">
@@ -18,8 +19,8 @@
                 </div>
                 <div class="card-body bg-dark">
                     <div class="d-flex justify-content-center gap-3">
-                        <button class="btn btn-danger">Stopper</button>
-                        <button class="btn btn-warning">Timer</button>
+                        <button class="btn btn-danger" id="stopperBtn">Stopper</button>
+                        <button class="btn btn-warning" id="timerBtn">Timer</button>
                     </div>
                 </div>
             </div>
@@ -35,6 +36,10 @@
                 <button type="button" class="btn btn-warning" id="resetBtn">Reset</button>
             </div>
         </div>
+
+        <div id="timerPanel"></div>
+    </div>
+
     </div>
     <a href="https://github.com/Yogyerek1/Timer"><i class="fab fa-github" style='font-size:30px'></i></a>
     <script src="script.js"></script>
