@@ -87,6 +87,8 @@ startBtn.addEventListener("click", () => {
 
         updateDisplay();
     }
+
+    stop = false;
     
 
     interval = setInterval(() => {
@@ -99,7 +101,6 @@ startBtn.addEventListener("click", () => {
         } 
         updateDisplay();
     }, 1000);
-    
 });
 
 stopBtn.addEventListener("click", () => {
@@ -119,6 +120,7 @@ const resetTime = () => {
     hours = 0;
     minutes = 0;
     seconds = 0;
+    stop = false;
 };
 
 const incrementTime = () => {
