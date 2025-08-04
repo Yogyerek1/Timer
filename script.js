@@ -18,6 +18,7 @@ setInterval(() => {
 
 let mode = "stopper"; // or "timer"
 let interval = null;
+let stop = false;
 let hours = 0; // hours
 let minutes = 0; // minutes
 let seconds = 0; // seconds
@@ -75,7 +76,7 @@ timerBtn.addEventListener("click", () => {
 startBtn.addEventListener("click", () => {
     if (interval) return;
 
-    if (mode === "timer") {
+    if (mode === "timer" && stop === false) {
         const hoursInput = document.getElementById("hours");
         const minutesInput = document.getElementById("minutes");
         const secondsInput = document.getElementById("seconds");
@@ -104,6 +105,7 @@ startBtn.addEventListener("click", () => {
 stopBtn.addEventListener("click", () => {
     clearInterval(interval);
     interval = null;
+    stop = true;
 });
 
 resetBtn.addEventListener("click", () => {
